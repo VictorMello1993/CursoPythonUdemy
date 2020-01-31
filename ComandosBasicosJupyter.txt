@@ -1,0 +1,27 @@
+											ATALHOS JUPYTER
+
+
+CTRL + ENTER: Executa o comando no Jupyter
+
+OBS: quando a linha estiver em verde, significa que está no modo editor de texto. Quando estiver em azul, significa que está no modo de script de comandos
+
+ESC: habilita para o modo script de comando; pressionando ENTER retorna para o modo editor de texto
+
+No modo de script de comando, pressional a tecla 'L', o Jupyter automaticamente enumera as linhas de comando
+
+Ainda no modo de script de comando, pressionado a tecla 'D' 2 vezes, o Jupyter exclui uma linha de comando; pressionando a tecla 'B', o Jupyter adiciona uma nova linha depois
+da linha atual; pressionando a tecla 'A', cria uma nova linha antes da linha atual
+
+No modo edição de texto, quando estiver mais de uma linha de execução, geralmente a última linha que será executada, a menos que seja executada com print(), permitindo a execução
+de todas as linhas que estejam selecionadas
+
+
+ALT + ENTER: executa uma linha de comando e cria uma nova
+
+No modo de comando, usando a tecla 1, o IDE entra no modo markdown (uma linguagem de marcação) com # para inserir o título (ou tecla 2 para subtítulos e etc)
+
+
+
+
+
+
