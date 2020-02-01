@@ -12,3 +12,15 @@ print(10 % 4) # Resto da divisão
 a = 12
 b = a
 print(a + b)
+# %% [markdown]
+# Desafio: Calcular a porcentagem de comprometimento do salário em relação às despesas
+# %%
+salario = 3450.45
+despesas = 2456.2
+
+comprometimento = despesas / salario
+# print(round(comprometimento, 2) * 100)
+print('{0:.0%}'.format(comprometimento)) #Especificando a porcentagem
+
+
+# %%
