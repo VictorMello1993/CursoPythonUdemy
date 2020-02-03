@@ -67,3 +67,23 @@ despesas = 3967
 
 meta = saldo > 0 and salario - despesas >= 0.2 * salario
 meta
+
+"""
+Desafio 2: Se os dois trabalhos (Terça e Quinta) se 
+concretizarem, a pessoa irá para o shopping comprar uma TV de 
+50 polegadas. Em caso de um dos dois trabalhos se concretizarem,
+irá comprar uma TV de 32 polegadas. Então, irá comprar sorvete
+para comemorar. Se nenhum trabalho se concretizar, não irá
+para o shopping para comprar TV nem tomar sorvete, mas terá
+mais saúde
+"""
+
+trabalho_terca = True
+trabalho_quinta = True
+sorvete = trabalho_terca or trabalho_quinta
+tv_32 = trabalho_terca != trabalho_quinta
+tv_50 = trabalho_terca and trabalho_quinta
+mais_saudavel = not sorvete
+
+print("Tv50={} Tv32={} Sorvete={} Saudável={}"
+.format(tv_50, tv_32, sorvete, mais_saudavel))
