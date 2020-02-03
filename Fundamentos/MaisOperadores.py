@@ -5,9 +5,9 @@
 lista = [1, 2, 3, 'Victor', 'Mello']
 
 #Operador de membro
-# print(2 in lista)
-# print('Victor' in lista)
-# print('Mello' not in lista)
+print(2 in lista)
+print('Victor' in lista)
+print('Mello' not in lista)
 
 #Operador de identidade
 x = 3
