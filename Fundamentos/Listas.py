@@ -48,3 +48,30 @@ lista[3]
 1 in lista
 'Victor' in lista
 'Camilla' in lista
+
+# %% [markdown]
+
+## Listas (parte 3)
+
+# Acessando intervalo de elementos
+lista = ['Victor', 'Paula', 'Camilla', 'Vanderson', 'Max']
+
+#OBS: lembrando que o limite superior não é considerado
+lista[1:3]
+lista[1:-1]
+
+#Acessando a partir do índice 1 até o final da lista
+lista[1:]
+lista[:-1]
+lista[:] #equivalente a acessar a lista simplesmente com a variável
+
+lista[::2] #acessando elementos de 2 em 2
+lista[::-1] #acessando elementos do último ao primeiro
+
+#Excluindo o elemento de índice 3 (4º elemento)
+del lista[3]
+lista
+
+#Excluindo do elemento de índice 1 até o final, sobrando apenas o primeiro elemento 
+del lista[1:]
+lista
