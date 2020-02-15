@@ -61,3 +61,47 @@ for dia in dias_semana:
 print('\n')
 for numero in set('Muito legal'):
     print(numero)
+
+# %% [markdown]
+
+##FOR (Parte 3) percorrendo dicionários
+
+pessoa = {'Nome': 'Victor Mello', 'Idade': 26,
+            'Profissão': 'Programador', 
+            'Formado': False}
+
+# Percorrendo as chaves
+for chave in pessoa.keys():
+    print(chave)
+
+print('\n')
+
+# Percorrendo os valores
+for valor in pessoa.values():
+    print(valor)
+
+
+print('\n')
+
+# Percorrendo toda a estrutura de dicionário
+for chave, valor in pessoa.items():
+    print(chave, ':', valor)
+
+"""
+OBS: após o laço, as variáveis de iteração estarão disponíveis
+em todo o código"""    
+
+# %% [markdown]
+
+##For (parte 4) - For com else
+
+for i in range(1, 11):
+    # if(i == 5):
+    #     break
+    print(i)
+else:
+    print('Fim')
+
+"""
+Só irá executar o else quando terminar a execução do laço,
+ou seja, quando i for 11"""
