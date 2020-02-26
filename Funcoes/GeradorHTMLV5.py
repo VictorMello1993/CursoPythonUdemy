@@ -7,7 +7,7 @@
 bloco_atrs = ('bloco_accesskey', 'bloco_id')
 ul_atrs = ('ul_id', 'ul_style')
 
-'''Função responsável por retornar uma string que representa um elemento com par de chaves-valor,
+'''Função filtrar_atrbs é responsável por retornar uma string que representa um elemento com par de chaves-valor,
 onde a chave é uma substring obtida a partir de um split com _ e acessando o último elemento da array de string resultante do método
 split, eliminando o prefixo, e o valor é representado pela atribuição de um parâmetro nomeado passado na função tag_bloco()'''
 
