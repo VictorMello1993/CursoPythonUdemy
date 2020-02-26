@@ -21,22 +21,11 @@ def filtrar_atrbs(informados, suportados):
 
 def tag_bloco(conteudo, *args, classe='success', inline=False, **novos_atrs):
     tag = 'span' if inline else 'div'
-    html = conteudo if not callable(conteudo) else conteudo(*args, **novos_atrs)    
-    # return f'<{tag} class="{classe}">{html}</{tag}>'
+    html = conteudo if not callable(conteudo) else conteudo(*args, **novos_atrs)        
     return f'<{tag} {filtrar_atrbs(novos_atrs, bloco_atrs)} class="{classe}">{html}</{tag}>'
 
-def tag_lista(*itens, **novos_atrs):
-    # lista = ''.join((f'<li>{item}</li>' for item in itens)) #Generator
-    # return f'<ul>{lista}</ul>'
+def tag_lista(*itens, **novos_atrs):    
     return f'<ul>{filtrar_atrbs(novos_atrs, ul_atrs)}</ul>'
 
-# print(tag_bloco('bloco'))
-# print(tag_bloco('inline e classe', classe='info', inline=True))
-# print(tag_bloco('inline', inline=True))
-# print(tag_bloco(conteudo='inline', inline=True))
-# print(tag_lista('Item 1', 'Item 2', 'Item 3'))
-# print(tag_bloco(tag_lista('Item 1', 'Item 2', 'Item 3'), classe='Info'))
-# print(tag_bloco(tag_lista, 'Sábado', 'Domingo', classe='Info', inline=True))
-
 print(tag_bloco(tag_lista, 'Item 1', 'item 2', classe='info',
-                bloco_accesskey='m', bloco_id='conteudo', ul_id='lista'))
+                bloco_accesskey='m', bloco_id='conteudo', ul_id='lista', blabla='blabla', ul_style='color:red'))
