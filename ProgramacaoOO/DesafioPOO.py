@@ -1,56 +1,5 @@
 from datetime import datetime, timedelta
-
-
-class Pessoa:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-
-    def __str__(self):
-        return f'Nome: {self.nome} - Idade: {self.idade}'
-
-    def is_adult(self):
-        return self.idade >= 18
-
-
-class Vendedor(Pessoa):
-    def __init__(self, nome, idade, salario):
-        super().__init__(nome, idade)
-        self.salario = salario
-
-    def __str__(self):
-        if isinstance(self, Vendedor):
-            return f'Nome do vendedor: {self.nome} - Idade: {self.idade} - Salário: {self.salario}'
-
-
-class Cliente(Pessoa):
-    def __init__(self, nome, idade):
-        super().__init__(nome, idade)
-        self.compras = []
-
-    def registrar_compra(self, compra):
-        self.compras.append(compra)
-
-    def get_data_ultima_compra(self):
-        return max(compra.data for compra in self.compras)
-
-    def __str__(self):
-        if isinstance(self, Cliente):
-            return f'Nome do cliente: {self.nome} - Idade: {self.idade}'
-
-    def total_compras(self):
-        total = 0
-        for compra in self.compras:
-            total += compra.valor
-        return total
-
-
-class Compra:
-    def __init__(self, vendedor, data, valor):
-        self.vendedor = vendedor
-        self.data = data
-        self.valor = valor
-
+from Loja import Cliente, Vendedor, Compra
 
 def main():
     cliente1 = Cliente('Victor Santos', 26)
@@ -62,15 +11,14 @@ def main():
     cliente1.registrar_compra(Compra(vendedor2, datetime(2021, 4, 30), 99.90))
     cliente1.registrar_compra(Compra(vendedor3, datetime(2020, 12, 30), 40.55))
 
+    print(f'Cliente: {cliente1}', '(adulto)' if cliente1.is_adult() else '')
+    print(f'Vendedor 1: {vendedor1}', '(adulto)' if vendedor1.is_adult() else '')
+    print(f'Vendedor 2: {vendedor2}', '(adulto)' if vendedor2.is_adult() else '')
+    print(f'Vendedor 3: {vendedor3}', '(adulto)' if vendedor3.is_adult() else '')
 
-    print(cliente1)
-    print(vendedor1)
-    print(vendedor2)
-    print(vendedor3)
-
-    print(cliente1.get_data_ultima_compra())
-    print('{:.2f}'.format(cliente1.total_compras()))
-
+    print(f'Número de compras do cliente 1: {len(cliente1.compras)}')
+    print(f'Última compra: {cliente1.get_data_ultima_compra()}')
+    print('Total: {:.2f}'.format(cliente1.total_compras()))
 
 if __name__ == "__main__":
     main()
