@@ -1,0 +1,6 @@
+Nome: Maria, Idade: 45
+Nome: João, Idade: 33
+Nome: Camilla, Idade: 25
+Nome: Victor, Idade: 26
+Nome: Vanderson, Idade: 33
+Nome: Rone, Idade: 32
