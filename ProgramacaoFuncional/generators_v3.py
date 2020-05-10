@@ -57,6 +57,9 @@ generator_expression = (i for i in lista)
     forma que as funções lambda. A diferença em relação a um list
     comprehension é que a mesma retorna uma lista inteira, enquanto
     os generator expressions retornam um item de cada vez, economizando
-    mais memória e tornando mais eficiente do que os lists comprehensions'''
+    mais memória e tornando mais eficiente do que os lists comprehensions.
+    Essa característica se chama 'lazy', onde os dados são sempre gerados
+    sob demanda, em vez de gerar um conjunto completo de dados como
+    ocorre com lists comprehensions.'''
 
 
