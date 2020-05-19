@@ -1,0 +1,15 @@
+																					COMANDOS BÁSICOS DO PIP
+																					
+pip3 freeze: congelamento de pacotes (irá mostrar todos os pacotes e versões que foram instaladas na máquina)
+pip3 install -r nome_arquivo: instala os pacotes para a máquina os copia para um arquivo
+pip3 install nome_pacote: instala o pacote especificado globalmente (OBS: geralmente o usuário não terá permissões para instalar globalmente a não ser que sejam invocados privilégios de superusuário (root))
+pip3 install --user nome_pacote: instala o pacote especificado na pasta do usuário
+pip3 uninstall nome_pacote: desinstala pacote especificado da máquina
+pip3 list: lista completa de todos os pacotes e versões instaladas na máquina
+echo 'pacote==versao' >> arquivo: adicionando um pacote a uma nova linha do arquivo
+pip3 install --upgrade nome_pacote: atualiza pacote
+pip3 search nome_pacote: pesquisa as ocorrências (versões disponíveis) de um pacote especificado
+pip3 list --outdated: verifica se existe alguma dependência desatualizada em um ambiente															
+python -m site: lista todos os caminhos das pastas onde ficam todos os pacotes instalados (seja globalmente, através da pasta do Python, quanto para pasta do usuário local do sistema)			
+python -c 'trecho_codigo': executa trechos de código em uma string
+python -m nome_pacote: executa pacote como script
