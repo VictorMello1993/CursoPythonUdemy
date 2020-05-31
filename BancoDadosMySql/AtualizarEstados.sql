@@ -1,0 +1,12 @@
+--Atualizando registros de estados
+update estados
+set nome = 'Maranhão'
+where sigla = 'MA'
+
+select est.nome from estados est where est.sigla= "MA"
+
+update estados
+set nome = 'Paraná', populacao = 11.32
+where sigla = 'PR'
+
+select est.nome, est.sigla, est.populacao from estados est where est.sigla= "PR"
