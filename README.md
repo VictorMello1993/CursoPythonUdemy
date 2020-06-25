@@ -8,4 +8,6 @@ Conceitos aprendidos:
 * Paradigma orientada a objetos;
 * Paradigma funcional (funções lambda, map, filter e reduce, closures, funções de primeira classe e de alta ordem, etc);
 * Banco de dados (revisão com MySql);
-* Banco de dados com Python
+* Banco de dados com Python;
+* Gerenciamento de pacotes;
+* Isolamento de ambientes com VENV (alternativamente poderia utilizar Docker)
