@@ -1,0 +1,13 @@
+															CRIAÇÃO E ATIVAÇÃO DE UM AMBIENTE VIRTUAL
+															
+															
+Criação: python -m venv .venv (Uma pasta oculta que representa um ambiente virtual .venv é criado, com todos os pacotes específicos que foram instalados nesse mesmo ambiente)															
+
+Ativação: No Windows (CMD), basta usar ".venv/Scritps/activate (caminho padrão do venv)"
+	      No Windows (Power Sheel), basta usar ".venv/Scripts/Activate.ps1"
+		  No Linux, basta usar "source .venv/bin/activate"
+		  
+
+OBS: O processo de ativação de um ambiente isolado não ocorre apenas uma vez. Assim, toda vez que tiver que abrir um projeto específico futuramente, mesmo criado um 
+ambiente para ele, é preciso repetir o processo de ativação manualmente, aplicando os mesmos comandos citados acima 
+(dependendo do terminal e do sistema operacional).		  
